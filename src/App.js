@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components.js/Navbar";
 import About from "./components.js/About";
 import Home from "./components.js/Home";
-import NoteState from "./context/NoteState";
+import NoteState from "./context/notes/NoteState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
