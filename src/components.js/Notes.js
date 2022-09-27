@@ -14,7 +14,7 @@ const Notes = () => {
         <h1>Your Notes</h1>
         {
           notes.map((note)=>{
-            return <NoteItem note={note}/> ;
+            return <NoteItem key={note._id} note={note}/> ;
           })
         }
         </div>
