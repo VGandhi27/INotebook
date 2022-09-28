@@ -12,8 +12,8 @@ function App() {
     <NoteState>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<><Alert message="This is INoteBook made with love"/><Navbar /></>}>
-            <Route index element={<Home />} />
+          <Route path="/" element={<><Navbar /></>}>
+            <Route index element={<><Alert message="This is INoteBook made with love"/><Home /></>} />
             <Route path="about" element={<About />} />
             <Route path="home" element={<Home />} />
           </Route>
