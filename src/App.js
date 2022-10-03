@@ -5,6 +5,8 @@ import Home from "./components.js/Home";
 import NoteState from "./context/notes/NoteState";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Alert from "./components.js/Alert";
+import Login from "./components.js/Login";
+import Signup from "./components.js/Signup";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route index element={<><Alert message="This is INoteBook made with love"/><Home /></>} />
             <Route path="about" element={<About />} />
             <Route path="home" element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
           </Route>
         </Routes>
       </BrowserRouter>
